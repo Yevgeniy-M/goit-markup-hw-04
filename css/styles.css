@@ -63,8 +63,7 @@ img {
 
 /* Head */
 
-.navigation-logo,
-.footer-navigation-logo {
+.navigation-logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
@@ -126,6 +125,7 @@ img {
 .header-address-mail,
 .header-address-tel,
 .navigation-logo {
+  
   font-style: normal;
   color: var(--text-light-theme-color);
 }
@@ -220,7 +220,7 @@ img {
   color: var(--title-light-theme-color);
   margin-top: 30px;
   margin-bottom: 10px;
-  margin-left: 24px;
+  margin-left: px;
 }
 
 .advantages-list-item {
@@ -230,7 +230,7 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-light-theme-color);
-  margin-left: 24px;
+  margin-left: px;
 }
 
 .advantages-list-block::before {
@@ -337,8 +337,9 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  justify-content: center ;
+  justify-content: center;
   align-items: center;
+  margin-bottom: 24px;
 }
 
 .social-network-list-item-svg {
@@ -406,6 +407,20 @@ img {
   margin-bottom: 16px;
 }
 
+.regular-customers-list-svg {
+  width: 44px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.regular-customers-list:hover,
+.regular-customers-list:focus {
+  border: 1px solid #2196f3;
+}
+
+
 /* нижний колонтитул */
 .footer-container {
   background-color: #2f303a;
@@ -413,18 +428,25 @@ img {
 
 .footer {
   display: flex;
+  
   /*align-items: center;*/
 }
 
-.footer-navigation-logo {
+.fotter-logo {
   margin-top: 60px;
-  margin-bottom: 20px;
   margin-right: 147px;
 }
 
 .address {
+  padding-top: 20px;
   padding-bottom: 9px;
 }
+
+.footer-logo .navigation-logo {
+  display: flex;
+  margin-bottom: 200px;
+}
+
 
 /*.header-address-mail {
   margin-bottom: 0px;
@@ -456,7 +478,6 @@ img {
 }
 
 .subscription-title {
-  
   font-family: var(--main-font);
   font-style: normal;
   font-weight: 700;
@@ -465,9 +486,30 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-dark-theme-color);
-  margin-bottom: 40px;
+  }
+
+.subscription .social-network-list-item {
+  margin-top: 20px;
+  margin-bottom: 0px;  
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
+
+
+
+.subscription .social-network-list-item:hover,
+.subscription .social-network-list-item:focus {
+  background-color: var(--accent-color);
+}
+
+
+.subscription .footer-subscription-list:not(:last-child) {
+  margin-right: 20px;
+}
+  
+.subscription .social-network-list-item-svg {
+  fill: #fff;
+}
 
 
 .footer-address-mail,
@@ -490,32 +532,30 @@ img {
   margin-right: 94px;
 }
 
-.footer-button {
+.footer-button {  
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
-  display: block;
+  line-height: 1.88; 
   letter-spacing: 0.06em;
   color: var(--title-dark-theme-color);
   background-color: var(--accent-color);
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  /*padding: 10px 62px 10px 29px;*/
-
   border: none;
 }
 
-.footer-button::after {
-  content: "11";
-  justify-content: center;
-  width: 24px;
-  height: 24px;
+.footer-button-svg {
   margin-left: 10px;
-  background-image: url(./img/icons/send.png);
-  background-size: contain;
+
 }
 
+
+
+.subscription-button {
+  margin-top: 24px;
+  
+}
 /* страничка портфолио */
 
 .portfolio-list-link:hover,
