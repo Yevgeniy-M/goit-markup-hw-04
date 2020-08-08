@@ -36,9 +36,15 @@
       </nav>
       <div class="header-utils">
         <address class="header-address">
+          <svg class="header-address-svg-mail">
+            <use href="./img/icons/sprite.svg#icon-mail"></use>
+          </svg>
           <a class="header-address-mail link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
+          <svg class="header-address-svg-tele">
+            <use href="./img/icons/sprite.svg#icon-tele"></use>
+          </svg>
           <a class="header-address-tel link" href="tel:+380961111111"
             >+38 096 111 11 11</a
           >
@@ -89,10 +95,10 @@
               width="370"
               height="294"
             />
-              <div class="advantages-list-item-signature">
-                <h3 class="advantages-title">Технокряк</h3>
-                <p class="advantages-list-item">Веб-сайт</p>
-              </div>
+            <div class="advantages-list-item-signature">
+              <h3 class="advantages-title">Технокряк</h3>
+              <p class="advantages-list-item">Веб-сайт</p>
+            </div>
           </li>
           <li class="example-gallery-item">
             <img
@@ -101,10 +107,10 @@
               width="370"
               height="294"
             />
-              <div class="advantages-list-item-signature">
-                <h3 class="advantages-title">Постер New Orlean vs Golden Star</h3>
-                <p class="advantages-list-item">Дизайн</p>
-              </div>
+            <div class="advantages-list-item-signature">
+              <h3 class="advantages-title">Постер New Orlean vs Golden Star</h3>
+              <p class="advantages-list-item">Дизайн</p>
+            </div>
           </li>
 
           <li class="example-gallery-item">
@@ -114,10 +120,10 @@
               width="370"
               height="294"
             />
-              <div class="advantages-list-item-signature">
-                <h3 class="advantages-title">Ресторан Seafood</h3>
-                <p class="advantages-list-item">Приложение</p>
-              </div>
+            <div class="advantages-list-item-signature">
+              <h3 class="advantages-title">Ресторан Seafood</h3>
+              <p class="advantages-list-item">Приложение</p>
+            </div>
           </li>
 
           <li class="example-gallery-item">
@@ -127,10 +133,10 @@
               width="370"
               height="294"
             />
-              <div class="advantages-list-item-signature">
-                <h3 class="advantages-title">Проект Prime</h3>
-                <p class="advantages-list-item">Маркетинг</p>
-              </div>
+            <div class="advantages-list-item-signature">
+              <h3 class="advantages-title">Проект Prime</h3>
+              <p class="advantages-list-item">Маркетинг</p>
+            </div>
           </li>
           <li class="example-gallery-item">
             <img
@@ -139,10 +145,10 @@
               width="370"
               height="294"
             />
-              <div class="advantages-list-item-signature">
-                <h3 class="advantages-title">Проект Boxes</h3>
-                <p class="advantages-list-item">Приложение</p>
-              </div>
+            <div class="advantages-list-item-signature">
+              <h3 class="advantages-title">Проект Boxes</h3>
+              <p class="advantages-list-item">Приложение</p>
+            </div>
           </li>
 
           <li class="example-gallery-item">
@@ -152,10 +158,10 @@
               width="370"
               height="294"
             />
-              <div class="advantages-list-item-signature">
-                <h3 class="advantages-title">Inspiration has no Borders</h3>
-                <p class="advantages-list-item">Веб-сайт</p>
-              </div>
+            <div class="advantages-list-item-signature">
+              <h3 class="advantages-title">Inspiration has no Borders</h3>
+              <p class="advantages-list-item">Веб-сайт</p>
+            </div>
           </li>
 
           <li class="example-gallery-item">
@@ -164,11 +170,11 @@
               alt="Дизайн журнала"
               width="370"
               height="294"
-            />           
-              <div class="advantages-list-item-signature">
-                <h3 class="advantages-title">Издание Limited Edition</h3>
-                <p class="advantages-list-item">Дизайн</p>
-              </div>
+            />
+            <div class="advantages-list-item-signature">
+              <h3 class="advantages-title">Издание Limited Edition</h3>
+              <p class="advantages-list-item">Дизайн</p>
+            </div>
           </li>
           <li class="example-gallery-item">
             <img
@@ -177,10 +183,10 @@
               width="370"
               height="294"
             />
-                <div class="advantages-list-item-signature">
-                  <h3 class="advantages-title">Проект LAB</h3>
-                  <p class="advantages-list-item">Маркетинг</p>
-                </div>
+            <div class="advantages-list-item-signature">
+              <h3 class="advantages-title">Проект LAB</h3>
+              <p class="advantages-list-item">Маркетинг</p>
+            </div>
           </li>
           <li class="example-gallery-item">
             <img
@@ -189,19 +195,20 @@
               width="370"
               height="294"
             />
-              <div class="advantages-list-item-signature"></div>
-                <h3 class="advantages-title">Growing Business</h3>
-                <p class="advantages-list-item">Приложение</p>
-              </div>  
+            <div class="advantages-list-item-signature">
+              <h3 class="advantages-title">Growing Business</h3>
+              <p class="advantages-list-item">Приложение</p>
+            </div>
           </li>
         </ul>
       </section>
     </main>
+
     <footer class="footer-container">
       <div class="container">
         <div class="footer">
-          <address>
-            <a class="footer-navigation-logo link" href="./index.html"
+          <address class="fotter-logo">
+            <a class="navigation-logo link" href="./index.html"
               ><span class="navigation-logo-part1">Web</span>
               <span class="address-logo-part2">Studio</span>
             </a>
@@ -216,31 +223,62 @@
           <div class="subscription">
             <strong class="subscription-title">присоединяйтесь</strong>
             <ul class="list">
-              <li>
-                <a class="link" href="" aria-label="Сcылка на Instagram"
-                  >Instagram</a
+              <li class="footer-subscription-list">
+                <a
+                  class="social-network-list-item"
+                  href=""
+                  aria-label="Ccылка на Twitter"
                 >
+                  <svg class="social-network-list-item-svg">
+                    <use href="./img/icons/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="link" href="" aria-label="Ccылка на Twitter"
-                  >Twitter</a
+              <li class="footer-subscription-list">
+                <a
+                  class="social-network-list-item"
+                  href=""
+                  aria-label="Ccылка на Twitter"
                 >
+                  <svg class="social-network-list-item-svg">
+                    <use href="./img/icons/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="link" href="" aria-label="Ссылка на Facebook"
-                  >Facebook</a
+              <li class="footer-subscription-list">
+                <a
+                  class="social-network-list-item"
+                  href=""
+                  aria-label="Ссылка на Facebook"
                 >
+                  <svg class="social-network-list-item-svg">
+                    <use href="./img/icons/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="link" href="" aria-label="Ссылка на LinkedIn"
-                  >LinkedIn</a
+              <li class="footer-subscription-list">
+                <a
+                  class="social-network-list-item"
+                  href=""
+                  aria-label="Ссылка на LinkedIn"
                 >
+                  <svg class="social-network-list-item-svg">
+                    <use href="./img/icons/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
           <div class="footer-subscription">
             <strong class="subscription-title">Подпишитесь на рассылку</strong>
-            <button class="footer-button">Подписаться</button>
+            <div class="subscription-button">
+              <button class="footer-button">
+                Подписаться
+                <svg class="footer-button-svg" width="24" height="24">
+                  <use href="./img/icons/sprite.svg#icon-send"></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </div>
