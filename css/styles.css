@@ -129,7 +129,12 @@ img {
   color: var(--text-light-theme-color);
 }
 
+.header-address-tel {
+  align-items: center;
+}
 .header-address-mail {
+  justify-content: center;
+  align-items: center;
   margin-right: 30px;
 }
 
@@ -137,12 +142,24 @@ img {
   width: 16px;
   height: 11px;
   margin-right: 10px;
+  fill: var(--text-light-theme-color);
 }
 
 .header-address-svg-tele {
   width: 10px;
   height: 15px;
   margin-right: 10px;
+  fill: var(--text-light-theme-color);
+}
+
+.header-address-mail:hover .header-address-svg-mail,
+.header-address-mail:focus .header-address-svg-mail {
+  fill: var(--accent-color);
+}
+
+.header-address-tel:hover .header-address-svg-tele,
+.header-address-tel:focus .header-address-svg-tele {
+  fill: var(--accent-color);
 }
 
 /* Hero section*/
@@ -211,10 +228,9 @@ img {
 .advantages-title {
   font-family: Roboto;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--title-light-theme-color);
   margin-top: 30px;
   margin-bottom: 10px;
@@ -312,9 +328,8 @@ img {
 }
 
 .our-team-list {
-  width: 272px;
+  width: 270px;
   border-radius: 4px;
-  border: 1px solid #afb1b8;
   background-color: var(--title-dark-theme-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -414,6 +429,15 @@ img {
   border: 1px solid #2196f3;
 }
 
+.regular-customers-list-item-svg {
+  fill: #afb1b8;
+}
+
+.regular-customers-list-item:hover .regular-customers-list-item-svg,
+.regular-customers-list-item:focus .regular-customers-list-item-svg {
+  fill: var(--accent-color);
+}
+
 /* нижний колонтитул */
 .footer-container {
   background-color: #2f303a;
@@ -500,8 +524,7 @@ img {
 }
 
 .footer-address-mail,
-.footer-address-tel,
-.navigation-logo {
+.footer-address-tel {
   font-style: normal;
   color: var(--text-light-theme-color);
 }
@@ -541,6 +564,10 @@ img {
   margin-top: 24px;
 }
 /* страничка портфолио */
+
+.header-portfolio {
+  border-bottom: 1px solid #ececec;
+}
 
 .portfolio-list-link:hover,
 .portfolio-list-link:focus {
